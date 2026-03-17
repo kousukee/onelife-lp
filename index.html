@@ -226,6 +226,8 @@
       max-width: 960px;
       margin: 0 auto;
     }
+    .fi-record { background: #FDF3F0; }
+    .fi-multi  { background: #FFF8EC; }
     .feature-card {
       background: var(--bg);
       border-radius: 16px;
@@ -343,13 +345,13 @@
       .phone { width: 168px; height: 340px; }
       .empathy { padding: 56px 20px; }
       .features { padding: 60px 20px; }
-      .features-grid { grid-template-columns: 1fr; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
       .cta { padding: 60px 20px; }
       .privacy-wrap { padding: 56px 20px; }
     }
 
     @media (min-width: 601px) and (max-width: 900px) {
-      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .features-grid { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
 </head>
@@ -711,20 +713,32 @@
     <div class="feature-card">
       <div class="feature-icon fi-walk">🗺️</div>
       <h3>GPS散歩記録</h3>
-      <p>散歩を始めるだけで、距離と時間をGPSが自動で記録。毎日の積み重ねがグラフで可視化されます。</p>
-      <span class="feature-tag">📍 距離・時間を自動取得</span>
+      <p>散歩を始めるだけで、距離と時間をGPSが自動記録。バックグラウンドでもルートを記録し続けます。</p>
+      <span class="feature-tag">📍 バックグラウンド対応</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon fi-record">📝</div>
+      <h3>10種類の記録</h3>
+      <p>散歩・体重・食事・便・病院・お薬・お出かけ・日記・支出・予定。愛犬の毎日をあらゆる角度から残せます。</p>
+      <span class="feature-tag">写真・グラフ付き</span>
     </div>
     <div class="feature-card">
       <div class="feature-icon fi-carte">📋</div>
       <h3>健康カルテ</h3>
       <p>体重・食事・うんち・アレルギー・病院記録をまとめて確認。かかりつけ医への共有にも役立ちます。</p>
-      <span class="feature-tag">記録をまとめて見る</span>
+      <span class="feature-tag">🏥 病院でそのまま見せる</span>
     </div>
     <div class="feature-card">
       <div class="feature-icon fi-cal">📅</div>
       <h3>カレンダー管理</h3>
       <p>ワクチン・トリミング・通院の予定をカレンダーで管理。散歩や食事の記録も日ごとに確認できます。</p>
       <span class="feature-tag">予定・記録を一覧</span>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon fi-multi">🐕</div>
+      <h3>多頭飼い対応</h3>
+      <p>何頭でも登録OK。ワンタップで愛犬を切り替えて、それぞれの記録を管理できます。</p>
+      <span class="feature-tag">ペット切り替え</span>
     </div>
     <div class="feature-card">
       <div class="feature-icon fi-share">👨‍👩‍👧</div>
